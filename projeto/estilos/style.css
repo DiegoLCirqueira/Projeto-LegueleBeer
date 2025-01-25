@@ -7,12 +7,12 @@
 }
 
 body, html{
-    background-color: rgba(36, 36, 36);
+    background-color: #120405;
 }
 
 header{
     width: 99vw;
-    background-color: rgb(36, 36, 36);
+    background-color: #120405;
 
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ header > img{
 nav{
     display: flex;
     flex-flow:row wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav > a{
@@ -69,7 +69,7 @@ section{
 section > p{
     font-size: 1.5em;
     
-    color: white;
+    color: wheat;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 
     width: 50vw;
@@ -78,15 +78,30 @@ section > p{
 }
 
 #inormal{
-    background-color: rgb(137,88,41);
-    
+    background-color: #120405;
 }
 
 #inormal > p {
     border-radius: 10px;
     padding: 10px;
+    
+    background-color: #120405;
+    color: wheat;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: 78.6vw;
+}
 
-    background-color: white;
+#central{
+    background-color: #120405;
+}
+
+#central > p{
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    
+    background-color: #120405;
     color: wheat;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     height: auto;
@@ -95,11 +110,22 @@ section > p{
 
 #fundo1{
     margin: auto;
+    position: relative;
+    text-align: center;
     
     background-image: url(../imagens/fundo-cerveja.jpeg);
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed; /* Cria o efeito Parallax */
     height: 367px;
-    width: 80vw;
+    width: 100vw;
+}
+
+#fundo1 > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2em;
 }
